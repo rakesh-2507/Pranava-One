@@ -3,7 +3,7 @@ header("Content-Type: application/json");
 
 function write_log($msg)
 {
-    file_put_contents(__DIR__ . "/crm_log.txt", "[" . date("Y-m-d H:i:s") . "] $msg\n", FILE_APPEND);
+    file_put_contents("/var/tmp/crm_log.txt", "[" . date("Y-m-d H:i:s") . "] $msg\n", FILE_APPEND);
 }
 
 $data = json_decode(file_get_contents("php://input"), true);
@@ -79,7 +79,6 @@ $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $final_url);
 curl_setopt($ch, CURLOPT_POST, true); // POST allowed, but API uses query params
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
 $response = curl_exec($ch);
 $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
