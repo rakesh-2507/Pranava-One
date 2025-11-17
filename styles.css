@@ -126,13 +126,13 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
+        @media (max-width: 767px) {
             .main-container {
                 padding: 0 15px;
             }
 
             .card-body {
-                padding: 2rem 1.5rem !important;
+                padding: 1rem 1.5rem !important;
             }
 
             .section-card {
@@ -145,6 +145,12 @@
             }
             .col-lg-10 {
                 padding: 1rem 1rem !important;
+            }
+            .logo img{
+                width: 100% !important;
+            }
+            .logos{
+                gap: 4rem !important;
             }
         }
 
