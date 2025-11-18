@@ -68,7 +68,7 @@ $params = [
     "api_key" => "TRNQUILCRMpranavagroup",
     "country_code" => "91",
     "mobile_number" => $mobile,
-    "project_id" => "1",
+    "project_id" => "7",
     "source_type" => "17",
 
     "customer_name" => $name,
