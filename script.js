@@ -55,9 +55,9 @@ document.getElementById("inquiryForm").addEventListener("submit", function (e) {
   };
 
   if (document.getElementById("size1").checked)
-    formData.sizes.push("4 BHK + HT");
+    formData.sizes.push("4 BHK");
   if (document.getElementById("size2").checked)
-    formData.sizes.push("6 BHK + HT");
+    formData.sizes.push("3 BHK + HT");
 
   // Submit to CRM
   fetch("crm.php", {
